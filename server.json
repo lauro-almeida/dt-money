@@ -1,0 +1,76 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2022-11-02T00:40:48.127Z"
+    },
+    {
+      "id": 2,
+      "description": "Aluguel",
+      "type": "outcome",
+      "category": "Moradia",
+      "price": 1500,
+      "createdAt": "2022-11-02T00:48:32.621Z"
+    },
+    {
+      "id": 3,
+      "description": "Freela",
+      "type": "income",
+      "category": "Venda",
+      "price": 1500,
+      "createdAt": "2022-11-02T00:48:32.621Z"
+    },
+    {
+      "id": 4,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 45,
+      "createdAt": "2022-11-02T00:48:32.621Z"
+    },
+    {
+      "description": "Desenvolvimento de app",
+      "price": 10000,
+      "category": "Vendas",
+      "type": "income",
+      "createdAt": "2022-11-03T15:08:28.601Z",
+      "id": 5
+    },
+    {
+      "description": "Pastel",
+      "price": 5,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-11-03T15:35:13.735Z",
+      "id": 6
+    },
+    {
+      "description": "Coca Cola",
+      "price": 4,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-11-03T15:36:03.186Z",
+      "id": 7
+    },
+    {
+      "description": "Prestação do carro",
+      "price": 2000,
+      "category": "Transporte",
+      "type": "outcome",
+      "createdAt": "2022-11-03T16:08:46.424Z",
+      "id": 8
+    },
+    {
+      "description": "Plano de Saúde - Lua",
+      "price": 284,
+      "category": "Saúde",
+      "type": "outcome",
+      "createdAt": "2022-11-03T16:19:00.318Z",
+      "id": 9
+    }
+  ]
+}
