@@ -32,6 +32,13 @@ export function NewTransactionModal() {
     },
   )
 
+  const changeModalStatus = useContextSelector(
+    TransactionsContext,
+    (context) => {
+      return context.changeModalStatus
+    },
+  )
+
   const {
     control,
     register,
@@ -56,6 +63,7 @@ export function NewTransactionModal() {
     })
 
     reset()
+    changeModalStatus(false)
   }
 
   return (

@@ -71,6 +71,22 @@
       "type": "outcome",
       "createdAt": "2022-11-03T16:19:00.318Z",
       "id": 9
+    },
+    {
+      "description": "Cearinho",
+      "price": 20,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-11-04T14:29:06.599Z",
+      "id": 10
+    },
+    {
+      "description": "Lasanha",
+      "price": 50,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-11-04T14:46:49.864Z",
+      "id": 11
     }
   ]
 }

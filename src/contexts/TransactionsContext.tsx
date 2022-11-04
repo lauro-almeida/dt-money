@@ -20,8 +20,10 @@ interface createTransactionInput {
 
 interface TransactionContextType {
   transactions: Transaction[]
+  isModalOpen: boolean
   fetchTransactions: (query?: string) => Promise<void>
   createTransaction: (data: createTransactionInput) => Promise<void>
+  changeModalStatus: (status?: boolean) => void
 }
 
 interface TransactionsProviderProps {
@@ -32,6 +34,8 @@ export const TransactionsContext = createContext({} as TransactionContextType)
 
 export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([])
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const fetchTransactions = useCallback(async (query?: string) => {
     const response = await api.get('transactions', {
@@ -62,6 +66,14 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     [],
   )
 
+  function changeModalStatus(status?: boolean) {
+    if (status) {
+      setIsModalOpen(status)
+    } else {
+      setIsModalOpen((state) => !state)
+    }
+  }
+
   useEffect(() => {
     fetchTransactions()
   }, [fetchTransactions])
@@ -70,8 +82,10 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     <TransactionsContext.Provider
       value={{
         transactions,
+        isModalOpen,
         fetchTransactions,
         createTransaction,
+        changeModalStatus,
       }}
     >
       {children}
